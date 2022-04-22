@@ -11,13 +11,18 @@ a,
 button {
   transition: all 0.3s ease-in-out;
   outline: none !important;
+  text-decoration: none;
 }
 
 a:hover {
   text-decoration: none;
   cursor: pointer;
 }
-
+.image1 {
+  background-image: url("img_resize/1.webp");
+  height: 20em;
+  width: 100%;
+}
 #page-loading-blocs-notifaction {
   position: fixed;
   top: 0;
@@ -31,7 +36,6 @@ a:hover {
   width: 100%;
   clear: both;
   background: 50% 50% no-repeat;
-  padding: 0 50px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -91,7 +95,7 @@ a:hover {
 }
 
 .texture-paper::before {
-  background: url("img/texture-paper.png");
+  background: url("img_resize/texture-paper.webp");
   background-size: 280px 280px;
 }
 
@@ -681,9 +685,9 @@ p {
   font-size: 14px;
 }
 
-/*img {
+.img-responsive {
   width: 100%;
-}*/
+}
 
 .tight-width-whitespace {
   max-width: 600px;
@@ -708,6 +712,8 @@ p {
   max-width: 400px;
   margin: auto auto auto auto;
   color: #ffffff;
+  display: flex;
+  justify-content: center;
 }
 
 h2 {
@@ -781,11 +787,11 @@ h4 {
 }
 
 .tc-white {
-  color: #f3976c !important;
+  color: #ffffff !important;
 }
 
 .btn-atomic-tangerine {
-  background: #f3976c;
+  background: #cb4b10;
   color: #ffffff !important;
 }
 
@@ -824,11 +830,11 @@ h4 {
 }
 
 .bg-banniere {
-  background-image: url("img/agence-la-panthere.jpg");
+  background-image: url("img_resize/agence-la-panthere.webp");
 }
 
 .bg-presentation {
-  background-image: url("img/image-de-presentation.bmp");
+  background-image: url("img_resize/image-de-presentation.webp");
 }
 
 @media (max-width: 1024px) {
@@ -1034,15 +1040,93 @@ h4 {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
+  .bg-presentation {
+    background-image: url("img_resize/image-de-presentation.webp");
+  }
+  .bg-banniere {
+    background-image: url("img_resize/agence-la-panthere.webp");
+  }
+  /*.bg-banniere {
+    content: url("img_resize/agence-la-panthere.webp");
+  }*/
+
+  .img-responsive1 {
+    content: url("img_resize/1.webp");
+  }
+  .img-responsive2 {
+    content: url("img_resize/2.webp");
+  }
+  .img-responsive4 {
+    content: url("img_resize/4.webp");
+  }
+  .img-responsive3 {
+    content: url("img_resize/3.webp");
+  }
+
+  /*img {
+    width: 100%;
+  }*/
+  .row.row-no-gutters {
+    margin: 0px 0px 0px 30px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  .social {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .form-group {
+    margin: 20px;
+  }
+
+  .form-group input {
+    height: 50px;
+    margin-top: 15px;
+  }
+
+  .form-control {
+    margin-top: 15px;
+    width: 90%;
+  }
+
   .bloc {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .image_texte {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 4em;
+    font-weight: bold;
+  }
+  .col-xs-12 {
+    display: none;
+  }
+  .texte_image {
+    display: none;
   }
 }
 
 @media (max-width: 767px) {
   .bloc-mob-center-text {
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  p {
+    font-size: 22px;
   }
 }
