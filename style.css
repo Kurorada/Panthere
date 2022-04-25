@@ -1108,15 +1108,12 @@ h4 {
   }
 
   .image_texte {
-    font-size: 15px;
+    font-size: 16px;
     text-align: center;
     margin-top: 4em;
     font-weight: bold;
   }
   .col-xs-12 {
-    display: none;
-  }
-  .texte_image {
     display: none;
   }
 }
