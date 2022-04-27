@@ -473,7 +473,7 @@ button {
   text-align: center;
   margin-top: 4em;
   font-weight: bold;
-  margin: 55px 80px 0px 80px;
+  margin: 55px 80px 55px 80px;
 }
 
 .btn-rd {
@@ -868,13 +868,13 @@ h4 {
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .b-parallax {
     background-attachment: scroll;
   }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
   .b-parallax {
     background-attachment: scroll;
   }
@@ -892,10 +892,10 @@ h4 {
     overflow-x: hidden;
     position: relative;
   }
-  .bloc {
+  /*.bloc {
     padding-left: constant(safe-area-inset-left);
     padding-right: constant(safe-area-inset-right);
-  }
+  }*/
   .bloc-group,
   .bloc-group .bloc {
     display: block;
@@ -904,8 +904,8 @@ h4 {
   .bloc-fill-screen .fill-bloc-top-edge,
   .bloc-fill-screen .fill-bloc-bottom-edge {
     padding: 0 20px;
-    padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right);
+    /*padding-left: constant(safe-area-inset-left);
+    padding-right: constant(safe-area-inset-right);*/
   }
 }
 
@@ -993,10 +993,10 @@ h4 {
     float: left;
     margin-left: 10px;
   }
-  .bloc {
+  /*.bloc {
     padding-left: 0;
     padding-right: 0;
-  }
+  }*/
   .bloc-xxl,
   .bloc-xl,
   .bloc-lg {
@@ -1106,16 +1106,17 @@ h4 {
     width: 90%;
   }
 
-  .bloc {
+  /*.bloc {
     padding-left: 0;
     padding-right: 0;
-  }
+  }*/
 
   .image_texte {
     font-size: 16px;
     text-align: center;
     margin-top: 4em;
     font-weight: bold;
+    margin: 45px 30px 45px 30px;
   }
   .col-xs-12 {
     display: none;
@@ -1138,7 +1139,7 @@ h4 {
     text-align: center;
     margin-top: 4em;
     font-weight: bold;
-    margin: 3em 11em 0 11em;
+    margin: 3em 11em 3em 11em;
   }
 }
 
@@ -1152,7 +1153,7 @@ h4 {
     text-align: center;
     margin-top: 4em;
     font-weight: bold;
-    margin: 3em 12em 0 12em;
+    margin: 3em 12em 3em 12em;
   }
 }
 
@@ -1161,10 +1162,28 @@ h4 {
     font-size: 22px;
   }
 
+  .navbar-brand img[src$="svg"] {
+    min-width: 100px;
+    height: 2em;
+  }
+  .nav > li {
+    float: left;
+    margin-top: 4px;
+    font-size: 22px;
+  }
+
   .image_texte {
     font-size: 28px;
     text-align: center;
-    margin: 3em 6em 0 6em;
+    margin: 3em 6em 3em 6em;
     font-weight: bold;
+  }
+
+  .cta-hero {
+    font-size: 22px;
+  }
+
+  .icon-md {
+    font-size: 42px !important;
   }
 }
